@@ -1,0 +1,230 @@
+<! DOCTYPE html >
+< html  lang = " ru " >
+< голова >
+    < meta  charset = " UTF-8 " >
+    < title > ВАЛЕРИЯ ЗЕВАКИНА х КУЛАКОВ. ДИЗАЙН </ title >
+    < meta  name = " viewport " content = " width = device-width, initial-scale = 1.0 " >
+    < meta  http-Equiv = " X-UA-Compatible " content = " ie = edge " >
+    < link  type = " image / png " rel = " icon " href = " Image / favicon-256x256.png " >
+    < link  rel = " preconnect " href = " https://fonts.gstatic.com " >
+    < link  href = " https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap " rel = " stylesheet " >
+</ голова >
+
+
+< сценарий >
+  function  rollUpCsit ( )  {
+      документ . getElementById ( "myDropdown1" ) . classList . переключить ( "whr-drop-hide" ) ;
+  }
+  function  rollUpDSC ( )  {
+      документ . getElementById ( "myDropdown2" ) . classList . переключить ( "whr-drop-hide" ) ;
+  }
+  function  rollUpNovikov ( )  {
+      документ . getElementById ( "myDropdown3" ) . classList . переключить ( "whr-drop-hide" ) ;
+  }
+  function  rollUpBoho ( )  {
+      документ . getElementById ( "myDropdown4" ) . classList . переключить ( "whr-drop-hide" ) ;
+  }
+  function  rollUpLoyal ( )  {
+      документ . getElementById ( "myDropdown5" ) . classList . переключить ( "whr-drop-hide" ) ;
+  }
+  function  rollUpJedi ( )  {
+      документ . getElementById ( "myDropdown6" ) . classList . переключить ( "whr-drop-hide" ) ;
+  }
+
+
+</ скрипт >
+
+
+< стиль >
+body {
+    минимальная ширина :  360 пикселей ;
+    максимальная ширина :  100 % ;
+    семейство шрифтов : Comfortaa;
+    цвет :  # FFFFFF ;
+    цвет фона :  # 171717 ;
+    маржа :  0 ;
+}
+. head-header {
+    размер шрифта :  30 пикселей ;
+    font-weight : средний;
+    дисплей : гибкий;
+    выровнять элементы : гибкий конец;
+    justify-content : гибкий конец;
+    поле справа :  50 пикселей ;
+    margin-top :  30 пикселей ;
+}
+. head-header  >  a {
+    поле слева :  50 пикселей ;
+}
+. bottom-header {
+    выравнивание текста : центр;
+    font-weight : средний;
+    размер шрифта :  96 пикселей ;
+    вертикальное выравнивание : по центру;
+    margin-top :  200 пикселей ;
+}
+. p2 {
+    размер шрифта :  48 пикселей ;
+}
+. AboutMe {
+    маржа слева : авто;
+    маржа-право : авто;
+}
+. AboutMe  >  img {
+    ширина :  100 % ;
+}
+. Проекты {
+    выравнивание текста : центр;
+    размер шрифта :  48 пикселей ;
+    font-weight :  400 ;
+    высота :  254 пикс ;
+    преобразовать :  перевести ( 0 ,  29 % );
+}
+. imgs {
+    маржа слева : авто;
+    маржа-право : авто;
+}
+. imgs  >  img {
+    ширина :  100 % ;
+}
+. нижний колонтитул {
+    преобразовать :  перевести ( 0 ,  45 % );
+}
+. нижний колонтитул  >  p {
+    размер шрифта :  48 пикселей ;
+    font-weight :  400 ;
+    выравнивание текста : центр;
+}
+. footer-bottom {
+    размер шрифта :  30 пикселей ;
+    font-weight : средний;
+    дисплей : гибкий;
+    justify-content : center;
+    высота :  340 пикселей ;
+    поле справа :  55 пикселей ;
+}
+. footer-bottom  >  a {
+    поле слева :  50 пикселей ;
+    цвет :  # ffffff ;
+    текстовое оформление : нет;
+}
+. dropdown-content {
+    дисплей : нет;
+    цвет фона :  # 171717 ;
+  }
+  . whr-drop-main  >  img {
+      ширина :  100 % ;
+  }
+  . whr-drop-hide {
+    дисплей : блок;
+  }
+. dropbtn1 {
+    размер шрифта :  30 пикселей ;
+    font-weight :  400 ;
+    выравнивание текста : центр;
+    нижнее поле :  100 пикселей ;
+    margin-top :  100 пикселей ;
+    текст-оформление : подчеркивание;
+  }
+section  >  img {
+    ширина :  100 % ;
+    margin-top :  -4 пикселя ;
+    нижнее поле :  -4 пикселей ;
+}
+
+</ стиль >
+
+
+< тело >
+  < div  class = " header " >
+      < div  class = " head-header " >
+          < span > Я в телеграмме и вк: </ span >
+          < HREF = " https://t.me/smetanushk " > < IMG SRC = " Image / Valeria_img / tg.svg " > </ >  
+          < HREF = " https://vk.com/smetanushk " > < IMG SRC = " Image / Valeria_img / vk.svg " > </ >  
+      </ div >
+      < div  class = " bottom-header " >
+          < p > Привет! Я Валерия Зевакина, и .. </ p >
+          < p  class = " p2 " > .. Я графический дизайнер. </ p >
+      </ div >
+  </ div >
+  < div  class = " AboutMe " >
+      < img  src = " Image / Valeria_img / Bio_main.png " >
+  </ div >
+  < div  class = " Проекты " >
+      < p > Мои проекты </ p >
+  </ div >
+  < div  class = " imgs " >
+
+      < section  id = " first " >
+          < img  onclick = " rollUpCsit () " class = " dropbtn " src = " Image / Valeria_img / CSIT_main.png " >
+      </ section >
+      < div  id = " myDropdown1 " class = " dropdown-content " >
+          < div  class = " whr-drop-main " >
+              < img  src = " Image / Valeria_img / CSIT_Merch.png " >
+              < img  src = " Image / Valeria_img / CSIT_Typography.png " >
+              < img  src = " Image / Valeria_img / CSIT_Media.png " >
+              < div  class = " dropbtn1 " > < span  id = " first " class = " btn1 " onclick = " rollUpCsit () " > Свернуть проект CSIT </ span > </ div >
+          </ div >
+      </ div >
+
+      < section  id = " second " >
+          < img  onclick = " rollUpDSC () " class = " dropbtn " src = " Image / Valeria_img / DSC_main.png " >
+      </ section >
+      < div  id = " myDropdown2 " class = " dropdown-content " >
+          < div  class = " whr-drop-main " >
+              < img  src = " Изображение / Valeria_img / DSC_Media.png " >
+              < div  class = " dropbtn1 " > < span  id = " first " class = " btn1 " onclick = " rollUpDSC () " > Свернуть проект Google DSC </ span > </ div >
+          </ div >
+      </ div >
+
+      < section  id = " third " >
+          < img  onclick = " rollUpNovikov () " class = " dropbtn " src = " Image / Valeria_img / Novikov_main.png " >
+      </ section >
+      < div  id = " myDropdown3 " class = " dropdown-content " >
+          < div  class = " whr-drop-main " >
+              < img  src = " Image / Valeria_img / Novikov_Poly.png " >
+              < div  class = " dropbtn1 " > < span  id = " first " class = " btn1 " onclick = " rollUpNovikov () " > Свернуть стоматологический проект </ span > </ div >
+          </ div >
+      </ div >
+
+      < section  id = " четвертый " >
+          < img  onclick = " rollUpBoho () " class = " dropbtn " src = " Image / Valeria_img / Boho_main.png " >
+      </ section >
+      < div  id = " myDropdown4 " class = " dropdown-content " >
+          < div  class = " whr-drop-main " >
+              < img  src = " Image / Valeria_img / Boho_Media.png " >
+              < div  class = " dropbtn1 " > < span  id = " first " class = " btn1 " onclick = " rollUpBoho () " > Свернуть проект Boho.Planet </ span > </ div >
+          </ div >
+      </ div >
+
+      < section  id = " пятое " >
+          < img  onclick = " rollUpLoyal () " class = " dropbtn " src = " Image / Valeria_img / Loyal_main.png " >
+      </ section >
+      < div  id = " myDropdown5 " class = " dropdown-content " >
+          < div  class = " whr-drop-main " >
+              < img  src = " Image / Valeria_img / LoyalMed_Media.png " >
+              < div  class = " dropbtn1 " > < span  id = " first " class = " btn1 " onclick = " rollUpLoyal () " > Свернуть проект LoyalMed </ span > </ div >
+          </ div >
+      </ div >
+
+      < section  id = " шестой " >
+          < img  onclick = " rollUpJedi () " class = " dropbtn " src = " Image / Valeria_img / Jedi_main.png " >
+      </ section >
+      < div  id = " myDropdown6 " class = " dropdown-content " >
+          < div  class = " whr-drop-main " >
+              < img  src = " Image / Valeria_img / Jedi_Typography.png " >
+              < div  class = " dropbtn1 " > < span  id = " first " class = " btn1 " onclick = " rollUpJedi () " > Roll Up Jedi.University Project </ span > </ div >
+          </ div >
+      </ div >
+
+  </ div >
+  < div  class = " нижний колонтитул " >
+      < p > Пойдем работать вместе! </ p >
+      < div  class = " нижний колонтитул " >
+      < HREF = " https://t.me/smetanushk " > < IMG SRC = " Image / Valeria_img / tg.svg " > </ >  
+      < HREF = " https://vk.com/smetanushk " > < IMG SRC = " Image / Valeria_img / vk.svg " > </ >  
+      < HREF = " электронная почта: valeria.zevakina@yandex.ru " > valeria.zevakina@yandex.ru </ > 
+  </ div >
+
+</ body >
+</ html >
