@@ -1,230 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>ZEVAKINA.DESIGN</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link type="image/png" rel="icon" href="Image/duck.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <link type="image/png" rel="icon" href="src/images/duck.png">
+
+    <title>ZEVAKINA.DESIGN</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
-
-<script>
-  function rollUpCsit() {
-      document.getElementById("myDropdown1").classList.toggle("whr-drop-hide");
-  }
-  function rollUpDSC() {
-      document.getElementById("myDropdown2").classList.toggle("whr-drop-hide");
-  }
-  function rollUpNovikov() {
-      document.getElementById("myDropdown3").classList.toggle("whr-drop-hide");
-  }
-  function rollUpBoho() {
-      document.getElementById("myDropdown4").classList.toggle("whr-drop-hide");
-  }
-  function rollUpLoyal() {
-      document.getElementById("myDropdown5").classList.toggle("whr-drop-hide");
-  }
-  function rollUpJedi() {
-      document.getElementById("myDropdown6").classList.toggle("whr-drop-hide");
-  }
-
-
-</script>
-
-
-<style>
-body {
-    min-width: 360px;
-    max-width: 100%;
-    font-family: Comfortaa;
-    color: #FFFFFF;
-    background-color: #171717;
-    margin: 0;
-}
-.head-header {
-    font-size: 2.5vw;
-    font-weight: medium;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    margin-right: 50px;
-    margin-top: 4%;
-}
-.head-header > a {
-    margin-left: 3.5vw;
-}
-.bottom-header {
-    text-align: center;
-    font-weight: medium;
-    font-size: 7vw;
-    vertical-align: middle;
-    margin-top: 18%;
-}
-.p2 {
-    font-size: 4vw;
-}
-.AboutMe {
-    margin-left: auto;
-    margin-right: auto;
-}
-.AboutMe > img {
-    width: 100%;
-}
-.Projects {
-    text-align: center;
-    font-size: 4.5vw;
-    font-weight: 400;
-    /* height: 254px; */
-    transform: translate(0, 29%);
-}
-.imgs {
-    margin-left: auto;
-    margin-right: auto;
-}
-.imgs > img {
-    width: 100%;
-}
-.footer {
-    transform: translate(0, 45%);
-}
-.footer > p {
-    font-size: 48px;
-    font-weight: 400;
-    text-align: center;
-}
-.footer-bottom {
-    font-size: 30px;
-    font-weight: medium;
-    display: flex;
-    justify-content: center;
-    height: 340px;
-    margin-right: 55px;
-}
-.footer-bottom > a {
-    margin-left: 50px;
-    color: #ffffff;
-    text-decoration: none;
-}
-.dropdown-content {
-    display: none;
-    background-color: #171717;
-  }
-  .whr-drop-main > img {
-      width: 100%;
-  }
-  .whr-drop-hide {
-    display: block;
-  }
-.dropbtn1 {
-    font-size: 30px;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 100px;
-    margin-top: 100px;
-    text-decoration: underline;
-  }
-section > img {
-    width: 100%;
-    margin-top: -4px;
-    margin-bottom: -4px;
-}
-
-</style>
-
-
 <body>
-  <div class="header">
-      <div class="head-header">
-          <span>I'm in telegram and vk:</span>
-          <a href="https://t.me/smetanushk"><img src="Image/Valeria_img/tg.svg"></a>
-          <a href="https://vk.com/smetanushk"><img src="Image/Valeria_img/vk.svg"></a>
-      </div>
-      <div class="bottom-header">
-          <p>Hi! I'm Valeria Zevakina, and..</p>
-          <p class="p2">.. I'm graphic designer.</p>
-      </div>
-  </div>
-  <div class="AboutMe">
-      <img src="Image/Valeria_img/Bio_main.png">
-  </div>
-  <div class="Projects">
-      <p>My Projects</p>
-  </div>
-  <div class="imgs">
+    <div class="container firstScreen d-flex justify-content-between flex-column pb-5 pt-5">
 
-      <section id="first">
-          <img onclick="rollUpCsit()" class="dropbtn" src="Image/Valeria_img/CSIT_main.png">
-      </section>
-      <div id="myDropdown1" class="dropdown-content">
-          <div class="whr-drop-main">
-              <img src="Image/Valeria_img/CSIT_Merch.png">
-              <img src="Image/Valeria_img/CSIT_Typography.png">
-              <img src="Image/Valeria_img/CSIT_Media.png">
-              <div class="dropbtn1"><span id="first" class="btn1" onclick="rollUpCsit()">Roll Up CSIT Project</span></div>
+        <nav>
+            <ul class="container list-inline text-end pb-5">
+                <li class="/*text-uppercase*/ list-inline-item">
+                    <a href="#about" class="underline" style="letter-spacing: 1px;">/обо мне</a>
+                </li>
+                <li class="/*text-uppercase*/ list-inline-item">
+                    <a href="#education" class="underline" style="letter-spacing: 1px;">/образование</a>
+                </li>
+                <li class="/*text-uppercase*/ list-inline-item">
+                    <a href="#skills" class="underline" style="letter-spacing: 1px;">/навыки</a>
+                </li>
+                <li class="/*text-uppercase*/ list-inline-item">
+                    <a href="#experience" class="underline" style="letter-spacing: 1px;">/опыт</a>
+                </li>
+                <li class="/*text-uppercase*/ list-inline-item">
+                    <a href="#projects" class="underline" style="letter-spacing: 1px;">/портфолио</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <h1 class="h6 text-uppercase text-center pb-4" style="letter-spacing: 1px;">
+                zevakina.design
+            </h1>
+
+            <p class="text-uppercase text-center pb-2" >
+                Привет!<br>Меня зовут Валерия Зевакина<br>и я графический дизайнер
+            </p>
+
+            <div class="container text-center pb-4">
+                <a href="https://t.me/valeriazevakina" target="_blank">
+                    <img src="src/images/home/social-icons/Telegram_black.svg" class="p-2"></a>
+                <a href="https://www.behance.net/valeriazevakina" target="_blank">
+                    <img src="src/images/home/social-icons/Behance_black.svg" class="p-2"></a>
+                <a href="mailto:valeria.zevakina@yandex.ru?subject=zevakina.design" target="_blank">
+                    <img src="src/images/home/social-icons/Mail_black.svg" class="p-2"></a>
+            </div>
+
+            <div class="container-fluid text-center">
+                <img src="src/images/home/photo.jpeg" style="width: 460px;" class="img-fluid firstImage">
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-5 pb-5">
+        <h2 class="h6 text-uppercase text-end pb-4 id="about" style="letter-spacing: 3px;">/обо мне</h2>
+
+        <p>На данный момент работаю учителем информатики в одной из школ Ленинского района города Саратов. 
+            Помимо основной специальности, периодически выполняю заказы по графическому дизайну.
+        </p>
+        <p>Как дизайнер начала свою деятельность в 2019 году: поступив на первый курс в Саратовском государственном университете
+            имени Н.Г.Чернышевского, принимала активное участие в развитии медиа-направлений факультета Компьютерных
+            наук и информационных технологий. 
+        </p>
+        <p>В настоящее время продолжаю заниматься графическим дизайном, в частности веду сотрудничество
+            с некоторыми развивающимися стартапами, а также выполняю небольшие одноразовые заказы. Приоритетными направлениями для меня являются:
+            <li>Разработка айдентики;</li>
+            <li>Рекламная графика;</li>
+            <li>Иллюстрация.</li>
+        </p>
+    </div>
+
+    <div class="container pt-5 pb-5">
+        <h2 class="h6 text-uppercase text-end pb-4" id="education" style="letter-spacing: 3px;">/образование</h2>
+
+        <div class="row pb-4">
+            <div class="col-12 col-md-3">
+                2019 - 2023<br><span class="description"> 4 года </span>
+            </div>
+            <div class="col-12 col-md-3">
+                Диплом бакалавра, СГУ им. Н.Г.Чернышевского 
+            </div>
+            <div class="col-12 col-md-6">
+                Педагогическое образование, профиль "Информатика"<br> 
+                Тема ВКР: "Разработка факультативного курса «Веб-дизайн и успешный успех в IT-сфере»" <a href="src/docs/Autoreferat.pdf">(автореферат)</a>
+            </div>
+        </div>
+
+        <div class="row pb-4">
+            <div class="col-12 col-md-3">
+                2022 - 2023<br><span class="description">1 год</span>
+            </div>
+            <div class="col-12 col-md-3">
+                Диплом о профессиональной переподготовке, СГУ им. Н.Г.Чернышевского
+            </div>
+            <div class="col-12 col-md-6">
+                Специалист по анализу данных в образовании
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="container pt-5 pb-5">
+        <h2 class="h6 text-uppercase text-end pb-4" id="skills" style="letter-spacing: 3px;">/навыки</h2>
+        <p>
+            <li>Работа в Adobe Photoshop, Adobe Illustrator, Figma</li>
+            <li>Способность принимать и давать конструктивную критику для лучшего выполнения поставленной задачи</li>
+            <li>Знание основ веб-дизайна</li>
+            <li>Опыт в создании печатной продукции</li>
+            <li>Внимание к деталям</li>
+            <li>Навык рисования</li>
+            <li>Любовь к типографии</li>
+        </p>
+    </div> 
+
+    <div class="container pt-5 pb-5">
+        <h2 class="h6 text-uppercase text-end pb-4" id="experience" style="letter-spacing: 3px;">/профессиональная деятельность</h2>
+
+        <div class="row pb-4">
+            <div class="col-12 col-md-3">
+                2019 - 2023<br><span class="description">4 года</span>
+            </div>
+            <div class="col-12 col-md-3">
+                Дизайнер, Студсовет фКНиИТ
+            </div>
+            <div class="col-12 col-md-6">
+                Пикчи к постам, принты для печати мерча, афиши к студвесне
+            </div>
+        </div>
+
+        <div class="row pb-4">
+            <div class="col-12 col-md-3">
+                2020 - 2022<br><span class="description">2 года</span>
+            </div>
+            <div class="col-12 col-md-3">
+                Дизайнер, Google Developer Students Club на базе СГУ
+            </div>
+            <div class="col-12 col-md-6">
+                Дизайн пикч к постам, анонсам, афиши мероприятий
+            </div>
+        </div>
+
+        <div class="row pb-4">
+            <div class="col-12 col-md-3">
+                2022 - 2023<br><span class="description">1 год</span>
+            </div>
+            <div class="col-12 col-md-3">
+                Иллюстратор (аутсорс), ООО «Лайк Центр»
+            </div>
+            <div class="col-12 col-md-6">
+                Отрисовка иллюстраций для курсов
+            </div>
+        </div>
+
+        <div class="row pb-4">
+            <div class="col-12 col-md-3">
+                2021 <br><span class="description">3 месяца</span>
+            </div>
+            <div class="col-12 col-md-3">
+                Иллюстратор (аутсорс), STYLE KIT
+            </div>
+            <div class="col-12 col-md-6">
+                Отрисовка иллюстраций для живых обоев
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-3">
+                2019 - настоящее время <br><span class="description">4+ лет</span>
+            </div>
+            <div class="col-12 col-md-3">
+                Фриланс
+            </div>
+            <div class="col-12 col-md-6">
+                Разработка айдентики для компаний и личного бренда, то сё, рекламные креативы и так далее и тому подобное
+                Много всего!!!
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="container pt-5 pb-5">
+        <h2 class="h6 text-uppercase text-end pb-4" id="projects" style="letter-spacing: 3px;">/Проекты</h2>
+
+        <div class="row align-items-center pb-3">
+            <div class="col-12 col-md-6 order-2 order-md-1">
+                <p class="text-uppercase">■ YKSoft</p>
+                <p>Work on projects for businesses in various fields from construction companies to the agro-industrial
+                    complex. Creation, revision and support of websites and products. Development of internal services
+                    and projects of the company.
+                </p>
+            </div>
+            <div class="col-12 col-md-5 offset-0 offset-md-1 order-1 order-md-2">
+                <img src="src/images/home/yks-mockup.png" class="img-fluid">
+            </div>
+        </div>
+
+        <div class="row align-items-center pb-3">
+            <div class="col-12 col-md-5 order-1">
+                <img src="src/images/home/cl-mockup.png" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6 offset-0 offset-md-1 order-2">
+                <p class="text-uppercase">■ Climbing Lines</p>
+                <p>An app for climbers that allows you to discover new places to climb and find different routes in
+                    locations. It contains selections based on users interests and collections moderated by experienced
+                    guides.
+                    In addition, the trip is accompanied by a convenient route tracking, which allows anyone to get the
+                    maximum of emotions from the ascent and not get lost. It is also possible to share feedback on the
+                    route and update information about it.
+                </p>
+            </div>
+        </div> -->
+
+<!-- 
+        <div class="text-center">
+            <a href="./projects/">view more projects</a>
+        </div>
+
+    </div> -->
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content container" style="height: 100vh;" >  
+            <div class="container text-end mt-4 mt-sm-5">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="filter: invert(1);"></button>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide align-middle position-absolute top-50 start-50 translate-middle w-100" data-bs-ride="carousel">
+                
+                <div class="carousel-indicators position-absolute top-100 text-center">
+                  <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"> -->
+                    <img src="src/images/home/photo.jpeg"  style="height: 100px; width: 100px; object-fit: cover;" alt="..." type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                    <!-- </button> -->
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner d-flex text-center" >
+                  <div class="carousel-item active">
+                    <img src="src/images/home/photo.jpeg" class="h-100 img-fluid" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="src/images/home/111.jpg" class="h-100 img-fluid" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="src/images/home/222.jpg" class="h-100 img-fluid" alt="...">
+                  </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
           </div>
+        </div>
       </div>
 
-      <section id="second">
-          <img onclick="rollUpDSC()" class="dropbtn" src="Image/Valeria_img/DSC_main.png">
-      </section>
-      <div id="myDropdown2" class="dropdown-content">
-          <div class="whr-drop-main">
-              <img src="Image/Valeria_img/DSC_Media.png">
-              <div class="dropbtn1"><span id="first" class="btn1" onclick="rollUpDSC()">Roll Up Google DSC Project</span></div>
-          </div>
-      </div>
+    <div class="container pt-5">
+        <h2 class="h6 text-uppercase text-end pb-4" id="other">other projects</h2>
 
-      <section id="third">
-          <img onclick="rollUpNovikov()" class="dropbtn" src="Image/Valeria_img/Novikov_main.png">
-      </section>
-      <div id="myDropdown3" class="dropdown-content">
-          <div class="whr-drop-main">
-              <img src="Image/Valeria_img/Novikov_Poly.png">
-              <div class="dropbtn1"><span id="first" class="btn1" onclick="rollUpNovikov()">Roll Up Dental Project</span></div>
-          </div>
-      </div>
+        <div class="row">
+            <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="col-6 col-md-3 text-center pb-5 d-flex align-items-center justify-content-center">
+                    <img class="logo-image img-fluid p-3 p-md-1 mb-2 mb-md-5" src="src/images/home/logos/logo-01.svg">
+            </div>
+            
+            <div class="col-6 col-md-3 text-center pb-5 d-flex align-items-center justify-content-center">
+                <img class="logo-image img-fluid p-3 p-md-1 mb-2 mb-md-5" src="src/images/home/logos/logo-02.svg">
+            </div>
+            <div class="col-6 col-md-3 text-center pb-5 d-flex align-items-center justify-content-center">
+                <img class="logo-image img-fluid p-3 p-md-1 mb-2 mb-md-5" src="src/images/home/logos/logo-03.svg">
+            </div>
+            <div class="col-6 col-md-3 text-center pb-5 d-flex align-items-center justify-content-center">
+                <img class="logo-image img-fluid p-3 p-md-1 mb-2 mb-md-5" src="src/images/home/logos/logo-04.svg">
+            </div>
 
-      <section id="fourth">
-          <img onclick="rollUpBoho()" class="dropbtn" src="Image/Valeria_img/Boho_main.png">
-      </section>
-      <div id="myDropdown4" class="dropdown-content">
-          <div class="whr-drop-main">
-              <img src="Image/Valeria_img/Boho_Media.png">
-              <div class="dropbtn1"><span id="first" class="btn1" onclick="rollUpBoho()">Roll Up Boho.Planet Project</span></div>
-          </div>
-      </div>
+            <div class="col-6 col-md-3 text-center pb-5 d-flex align-items-center justify-content-center">
+                <img class="logo-image img-fluid p-3 p-md-1 mb-2 mb-md-5" src="src/images/home/logos/logo-05.svg">
+            </div>
+            <div class="col-6 col-md-3 text-center pb-5 d-flex align-items-center justify-content-center">
+                <img class="logo-image img-fluid p-3 p-md-1 mb-2 mb-md-5" src="src/images/home/logos/logo-06.svg">
+            </div>
+            <div class="col-6 col-md-3 text-center pb-5 d-flex align-items-center justify-content-center">
+                <img class="logo-image img-fluid p-3 p-md-1 mb-2 mb-md-5" src="src/images/home/logos/logo-07.svg">
+            </div>
+            <div class="col-6 col-md-3 text-center pb-5 d-flex align-items-center justify-content-center">
+                <img class="logo-image img-fluid p-3 p-md-1 mb-2 mb-md-5" src="src/images/home/logos/logo-12.svg">
+            </div>
 
-      <section id="fifth">
-          <img onclick="rollUpLoyal()" class="dropbtn" src="Image/Valeria_img/Loyal_main.png">
-      </section>
-      <div id="myDropdown5" class="dropdown-content">
-          <div class="whr-drop-main">
-              <img src="Image/Valeria_img/LoyalMed_Media.png">
-              <div class="dropbtn1"><span id="first" class="btn1" onclick="rollUpLoyal()">Roll Up LoyalMed Project</span></div>
-          </div>
-      </div>
+            <div class="col-6 col-md-3 text-center pb-5 d-flex align-items-center justify-content-center">
+                <img class="logo-image img-fluid p-3 p-md-1 mb-2 mb-md-5" src="src/images/home/logos/logo-09.svg">
+            </div>
+            <div class="col-6 col-md-3 text-center pb-5 d-flex align-items-center justify-content-center">
+                <img class="logo-image img-fluid p-3 p-md-1 mb-2 mb-md-5" src="src/images/home/logos/logo-10.svg">
+            </div>
+            <div class="col-6 col-md-3 text-center pb-5 d-flex align-items-center justify-content-center">
+                <img class="logo-image img-fluid p-3 p-md-1 mb-2 mb-md-5" src="src/images/home/logos/logo-11.svg">
+            </div>
+            <div class="col-6 col-md-3 text-center pb-5 d-flex align-items-center justify-content-center">
+                <img class="logo-image img-fluid p-3 p-md-1 mb-2 mb-md-5" src="src/images/home/logos/logo-08.svg">
+            </div>
 
-      <section id="sixth">
-          <img onclick="rollUpJedi()" class="dropbtn" src="Image/Valeria_img/Jedi_main.png">
-      </section>
-      <div id="myDropdown6" class="dropdown-content">
-          <div class="whr-drop-main">
-              <img src="Image/Valeria_img/Jedi_Typography.png">
-              <div class="dropbtn1"><span id="first" class="btn1" onclick="rollUpJedi()">Roll Up Jedi.University Project</span></div>
-          </div>
-      </div>
 
-  </div>
-  <div class="footer">
-      <p>Let's go work together!</p>
-      <div class="footer-bottom">
-      <a href="https://t.me/smetanushk"><img src="Image/Valeria_img/tg.svg"></a>
-      <a href="https://vk.com/smetanushk"><img src="Image/Valeria_img/vk.svg"></a>
-      <a href="mailto:valeria.zevakina@yandex.ru">valeria.zevakina@yandex.ru</a>
-  </div>
+        </div>
 
+
+    </div>
+
+
+    <footer class="container pb-5 d-flex justify-content-center flex-column align-items-center">
+        <a href="https://t.me/MaxKulakov" target="_blank" class="no-underline pb-2 d-flex align-items-center">
+            <h2 class="h6 text-uppercase text-with-arrow">let’s work together</h2>
+            <img src="src/images/home/arrow-icon.svg">
+        </a>
+    </footer>
+
+
+    <script src="./src/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
