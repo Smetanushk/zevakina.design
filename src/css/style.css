@@ -6,6 +6,10 @@ body {
     color: #E9E8E8;
 }
 
+.link-project:hover {
+    opacity: 0.5;
+}
+
 .h6 {
     text-transform: uppercase;
     font-weight: 600;
